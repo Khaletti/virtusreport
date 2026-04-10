@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "football":   "Football",
+    "basketball": "Basketball",
+    "mma":        "MMA",
+    "search":     "Search",
+    "newsletter": "Newsletter"
+  },
+  "tagline": "Sport · Stories · Analysis",
+  "categories": {
+    "football":   "Football",
+    "basketball": "Basketball",
+    "mma":        "MMA"
+  },
+  "article": {
+    "readTime":    "{minutes} min read",
+    "by":          "By {author}",
+    "share":       "Share",
+    "moreIn":      "More in {category}"
+  },
+  "home": {
+    "featured":    "Featured",
+    "latest":      "Latest",
+    "analysis":    "Analysis",
+    "stories":     "Stories"
+  },
+  "footer": {
+    "tagline":     "Beyond the final score.",
+    "about":       "About",
+    "contact":     "Contact",
+    "privacy":     "Privacy",
+    "rights":      "All rights reserved."
+  }
+}

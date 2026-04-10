@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "football":   "Football",
+    "basketball": "Basketball",
+    "mma":        "MMA",
+    "search":     "Recherche",
+    "newsletter": "Newsletter"
+  },
+  "tagline": "Sport · Histoires · Analyse",
+  "categories": {
+    "football":   "Football",
+    "basketball": "Basketball",
+    "mma":        "MMA"
+  },
+  "article": {
+    "readTime":    "{minutes} min de lecture",
+    "by":          "Par {author}",
+    "share":       "Partager",
+    "moreIn":      "Plus sur {category}"
+  },
+  "home": {
+    "featured":    "À la une",
+    "latest":      "Dernières",
+    "analysis":    "Analyse",
+    "stories":     "Reportages"
+  },
+  "footer": {
+    "tagline":     "Au-delà du score final.",
+    "about":       "À propos",
+    "contact":     "Contact",
+    "privacy":     "Confidentialité",
+    "rights":      "Tous droits réservés."
+  }
+}

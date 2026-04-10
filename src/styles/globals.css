@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── VirtusReport Design Tokens ─────────────────────────────────────── */
+:root {
+  --vr-nero:           #0D0D0D;
+  --vr-onyx:           #161616;
+  --vr-carbon:         #1E1E1E;
+  --vr-crimson:        #C8102E;
+  --vr-crimson-hover:  #A50D26;
+  --vr-parchment:      #F5F0E8;
+  --vr-steel:          #6B6760;
+
+  /* Sport categories */
+  --vr-football:       #1A6FA8;
+  --vr-basketball:     #C87310;
+  --vr-mma:            #A32D2D;
+
+  /* Typography */
+  --vr-font-display:   'Playfair Display', Georgia, serif;
+  --vr-font-body:      'Lora', Georgia, serif;
+  --vr-font-ui:        'DM Sans', system-ui, sans-serif;
+
+  /* Spacing scale */
+  --vr-container:      1200px;
+  --vr-radius-sm:      4px;
+  --vr-radius-md:      8px;
+  --vr-radius-lg:      12px;
+}
+
+/* ─── Base ────────────────────────────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: var(--vr-nero);
+  color: var(--vr-parchment);
+  font-family: var(--vr-font-ui);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--vr-nero);
+  min-height: 100vh;
+}
+
+/* ─── Typography ──────────────────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--vr-font-display);
+  color: var(--vr-parchment);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3rem);   font-weight: 700; }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; }
+h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 400; }
+
+p {
+  font-family: var(--vr-font-body);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--vr-parchment);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ─── Utility classes ─────────────────────────────────────────────────── */
+.vr-container {
+  max-width: var(--vr-container);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.vr-article-body {
+  font-family: var(--vr-font-body);
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--vr-parchment);
+}
+
+.vr-article-body p + p { margin-top: 1.5em; }
+.vr-article-body blockquote {
+  border-left: 3px solid var(--vr-crimson);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  color: var(--vr-steel);
+  font-style: italic;
+}
+
+/* ─── Category Labels ─────────────────────────────────────────────────── */
+.vr-cat {
+  display: inline-block;
+  font-family: var(--vr-font-ui);
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+.vr-cat--football   { background: #0D2A3F; color: #5BA5D9; }
+.vr-cat--basketball { background: #3D2600; color: #E89B3A; }
+.vr-cat--mma        { background: #2A0A0A; color: #C96060; }
+
+/* ─── Crimson accent line ─────────────────────────────────────────────── */
+.vr-accent-line {
+  border-left: 3px solid var(--vr-crimson);
+  padding-left: 1rem;
+}
+
+/* ─── Scrollbar ──────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--vr-nero); }
+::-webkit-scrollbar-thumb { background: var(--vr-carbon); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--vr-crimson); }
+
+/* ─── Selection ──────────────────────────────────────────────────────── */
+::selection {
+  background: var(--vr-crimson);
+  color: var(--vr-parchment);
+}

@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "football":   "Fussball",
+    "basketball": "Basketball",
+    "mma":        "MMA",
+    "search":     "Suche",
+    "newsletter": "Newsletter"
+  },
+  "tagline": "Sport · Geschichten · Analyse",
+  "categories": {
+    "football":   "Fussball",
+    "basketball": "Basketball",
+    "mma":        "MMA"
+  },
+  "article": {
+    "readTime":    "{minutes} Min. Lesezeit",
+    "by":          "Von {author}",
+    "share":       "Teilen",
+    "moreIn":      "Mehr zu {category}"
+  },
+  "home": {
+    "featured":    "Highlights",
+    "latest":      "Aktuell",
+    "analysis":    "Analyse",
+    "stories":     "Reportagen"
+  },
+  "footer": {
+    "tagline":     "Jenseits des Schlusspfiffs.",
+    "about":       "Über uns",
+    "contact":     "Kontakt",
+    "privacy":     "Datenschutz",
+    "rights":      "Alle Rechte vorbehalten."
+  }
+}
